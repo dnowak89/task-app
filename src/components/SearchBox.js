@@ -34,9 +34,7 @@ export const SearchBox = () => {
             return false;
         }
 
-        GetSearchData(searchData.searchValue).then((result) => {
-            const data = result.data
-
+        GetSearchData(searchData.searchValue).then((data) => {
             if(data.error) {
                   setData({
                     ...initialValues,
@@ -59,8 +57,6 @@ export const SearchBox = () => {
             }
         })
     }
-
-    console.log(searchData)
 
 
     return (
