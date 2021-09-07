@@ -1,11 +1,6 @@
 import axios from 'axios'
 
 export const GetSearchData = async (searchValue) => {
-    function getRandomInRange(from, to, fixed) {
-        return (Math.random() * (to - from) + from).toFixed(fixed) * 1;
-        // .toFixed() returns string, so ' * 1' is a trick to convert to number
-    }
-
     const random = Math.floor(Math.random() * 4); // for testing
 
     return new Promise(resolve => {
